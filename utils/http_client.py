@@ -36,3 +36,4 @@ class HTTPClient:
 # Authentication support for protected targets
 # Connection pooling for performance
 # SSL/TLS certificate verification
+# retry + backoff logic
