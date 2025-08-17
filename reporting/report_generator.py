@@ -47,3 +47,4 @@ def strip_ansi(text):
     return ansi_escape.sub('', text) 
 # Collect evidence and proof of exploitation
 # Multiple report export formats
+# improve output formatting
