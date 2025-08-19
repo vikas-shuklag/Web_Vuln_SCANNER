@@ -48,3 +48,4 @@ def strip_ansi(text):
 # Collect evidence and proof of exploitation
 # Multiple report export formats
 # improve output formatting
+# improve evidence formatting
