@@ -82,3 +82,4 @@ if __name__ == '__main__':
 # Detailed logging for debugging
 # Multi-threaded concurrent scanning
 # Version 1.0 - Complete web vulnerability scanner
+# CLI polish
