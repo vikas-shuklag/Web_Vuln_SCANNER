@@ -35,3 +35,4 @@ def get_xss_payloads():
 # Remove duplicate payloads for efficiency
 # Payload rotation for WAF evasion
 # Smart payload prioritization
+# payload cleanup
