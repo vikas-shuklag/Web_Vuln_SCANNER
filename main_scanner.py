@@ -84,3 +84,4 @@ if __name__ == '__main__':
 # Version 1.0 - Complete web vulnerability scanner
 # CLI polish
 # integration test note
+# final cleanup before release
