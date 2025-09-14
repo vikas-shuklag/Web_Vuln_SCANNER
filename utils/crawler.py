@@ -89,3 +89,4 @@ def crawl(http_client, start_url: str, max_depth: int = 1, verbose: bool = False
                 to_visit.append((normalized, depth + 1))
 
     return discovered_ordered
+# improve crawl loop stability and session handling
